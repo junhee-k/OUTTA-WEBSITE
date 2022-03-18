@@ -3,6 +3,7 @@
 <head>
     <link href="mainpagev2.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="mainpagev2.js"></script>
     <meta charset="UTF-8">
     <title>OUTTA Main Page</title>
@@ -24,49 +25,66 @@
             </nav>
         </div>
         <div class="video"></div>
-        <h2>WHAT WE DO</h2>
-        <div class="program">
-            <div id="left">
-                <div id="circle-bg"><img id="flex-img" src="images/프로그램 일러.png" alt=""></div>
-            </div>
-            <div id="right">
-                <img src="images/Program.png" alt="">
-                <div id="desc1">인공지능 경진대회</div>
-                <div id="desc2" style="text-align: right;">
-                    Face & Speech Recognition 기술을 이용해<br>
-                    유쾌한 아이디어를 직접 코딩을 통해 구현하는 대회
+        
+        <div class="section" id="section1">
+            <h2>WHAT WE DO</h2>
+            <div class="program">
+                <div id="left">
+                    <div id="circle-bg">
+                        <img id="flex-img1" src="images/프로그램 일러.png">
+                        <img id="flex-img1-hover" src="images/프로그램 일러 hover.png">
+                    </div>
                 </div>
-                <div id="button">지원하기</div>
+                <div id="right">
+                    <img src="images/Program.png" alt="">
+                    <div id="desc1">인공지능 경진대회</div>
+                    <div id="desc2" style="text-align: right;">
+                        Face & Speech Recognition 기술을 이용해<br>
+                        유쾌한 아이디어를 직접 코딩을 통해 구현하는 대회
+                    </div>
+                    <div class="button">지원하기</div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="section" id="section2">
+            <h2>WHAT WE DO</h2>
+            <div class="book" id="test">
+                <div id="left">
+                    <img src="images/Book.png" alt="">
+                    <div id="desc1">OUTTA에서만 볼 수 있는 책</div>
+                    <div id="desc2" style="text-align: left;">
+                        'Autonomous Cognitive Assistance’를<br>
+                        python으로 개발하는데 도움되는 교육 자료
+                    </div>
+                    <div class="button">책 보러가기</div>
+                </div>
+                <div id="right">
+                    <div id="circle-bg">
+                        <img id="flex-img2" src="images/책 일러.png" alt="">
+                        <img id="flex-img2-hover" src="images/책 일러 hover.png" alt="">
+                    </div>
+                </div>
             </div>
         </div>
-        <h2>WHAT WE DO</h2>
-        <div class="book">
-            <div id="left">
-                <img src="images/Book.png" alt="">
-                <div id="desc1">OUTTA에서만 볼 수 있는 책</div>
-                <div id="desc2" style="text-align: left;">
-                    'Autonomous Cognitive Assistance’를<br>
-                    python으로 개발하는데 도움되는 교육 자료
+        <div class="section" id="section3">
+            <h2>WHAT WE DO</h2>
+            <div class="resource" id="endsection">
+                <div id="left">
+                    <div id="circle-bg">
+                        <img id="flex-img3" src="images/자료실 일러.png" alt="">
+                        <img id="flex-img3-hover" src="images/자료실 일러 hover.png" alt="">
+                    </div>
                 </div>
-                <div id="button">책 보러가기</div>
-            </div>
-            <div id="right">
-                <div id="circle-bg"><img id="flex-img" src="images/책 일러.png" alt=""></div>
-            </div>
-        </div>
-        <h2>WHAT WE DO</h2>
-        <div class="resource">
-            <div id="left">
-                <div id="circle-bg"><img id="flex-img" src="images/자료실 일러.png" alt=""></div>
-            </div>
-            <div id="right">
-                <img src="images/Resource.png" alt="">
-                <div id="desc1">OUTTA에서만 볼 수 있는 자료실</div>
-                <div id="desc2" style="text-align: right;">
-                    교재 연습 문제 해결에 필요한<br>
-                    데이터셋 파일과 스켈레톤 코드 저장소
+                <div id="right">
+                    <img src="images/Resource.png" alt="">
+                    <div id="desc1">OUTTA에서만 볼 수 있는 자료실</div>
+                    <div id="desc2" style="text-align: right;">
+                        교재 연습 문제 해결에 필요한<br>
+                        데이터셋 파일과 스켈레톤 코드 저장소
+                    </div>
+                    <div class="button">자료실 보러가기</div>
                 </div>
-                <div id="button">자료실 보러가기</div>
             </div>
         </div>
         <div class="footer">
@@ -93,7 +111,7 @@
                     <li>BLOG</li>
                     <li>ORGANIZATION</li>
                     <li>CONTACT</li>
-                    <li>RESOURCES</li>
+                    <li id="endlinks">RESOURCES</li>
                 </ul>
             </div>
         </div>

@@ -98,6 +98,11 @@ h2{
     margin: 0px;
 }
 
+.container .section{
+    display: flex;
+    flex-direction: column;
+}
+
 .container .program, .container .book, .container .resource{
     width: 1920px;
     height: 566px;
@@ -118,7 +123,7 @@ h2{
     justify-content: center;
 }
 
-img{
+img .container{
     padding: 0px;
     margin: 0px;
 }
@@ -152,7 +157,7 @@ img{
     padding-bottom: 25px;
 }
 
-#button{
+.button{
     background: #FFFFFF;
     border: 2px solid #4558FF;
     box-sizing: border-box;
@@ -171,6 +176,13 @@ img{
     font-size: 18px;
     line-height: 36px;
     color: #4558FF;
+
+    transition: background 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+.button:hover {
+    background: #4558FF;
+    color: #FFFFFF;
 }
 
 /*footer*/
@@ -187,8 +199,7 @@ img{
 .blank{
     width: 1810px;
     height: 220px;
-    background-color: #C6C6C6;
-    /*border-bottom: 1px gray;*/
+    border-bottom: solid 1px gray;
 }
 
 .info{
@@ -232,8 +243,8 @@ img{
 
 .links li{
     float: left;
-    margin: 0 28px 0 28px;
-    border-right: 1px #C6C6C6;
+    padding: 0 28px 0 28px;
+    border-right: solid 1px #C6C6C6;
 
     font-family: 'Noto Sans KR';
     font-style: normal;
@@ -241,4 +252,54 @@ img{
     font-size: 15px;
     line-height: 24px;
     color: #4558FF;
+}
+
+#endsection{
+    box-shadow: 0px 0px;
+}
+
+#endlinks{
+    border-right: 0px;
+}
+
+#flex-img1{
+    position: absolute;
+    top: 1446px;
+    display: none;
+    z-index: 1;
+}
+
+#flex-img1-hover{
+    position: absolute;
+    top: 1446px;
+    display: none;
+    z-index: 2;
+}
+
+#flex-img2{
+    position: absolute;
+    top: 2204px;
+    display: none;
+    z-index: 1;
+}
+
+#flex-img2-hover{
+    position: absolute;
+    top: 2204px;
+    display: none;
+    z-index: 2;
+}
+
+#flex-img3{
+    position: absolute;
+    top: 2962px;
+    display: none;
+    z-index: 1;
+}
+
+#flex-img3-hover{
+    position: absolute;
+    top: 2962px;
+    display: none;
+    z-index: 2;
 }
