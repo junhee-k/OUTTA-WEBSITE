@@ -265,7 +265,6 @@ img .container{
 #flex-img1{
     position: absolute;
     top: 1446px;
-    display: none;
     z-index: 1;
 }
 
@@ -279,7 +278,6 @@ img .container{
 #flex-img2{
     position: absolute;
     top: 2204px;
-    display: none;
     z-index: 1;
 }
 
@@ -293,7 +291,6 @@ img .container{
 #flex-img3{
     position: absolute;
     top: 2962px;
-    display: none;
     z-index: 1;
 }
 
