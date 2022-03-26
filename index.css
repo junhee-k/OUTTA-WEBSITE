@@ -177,7 +177,7 @@ img .container{
     line-height: 36px;
     color: #4558FF;
 
-    transition: background 0.25s ease-in-out, color 0.25s ease-in-out;
+    transition: background 0.15s ease-in-out, color 0.25s ease-in-out;
 }
 
 .button:hover {
