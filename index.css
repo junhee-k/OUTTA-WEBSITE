@@ -59,6 +59,10 @@
     border-right: 1px solid #C6C6C6
 }
 
+.loggedin{
+    display: none;
+}
+
 .header .login{
     font-family: 'Noto Sans KR';
     font-style: normal;
